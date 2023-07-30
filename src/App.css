@@ -66,3 +66,12 @@ input::placeholder{
   flex-direction: column;
   padding: 30px;
 }
+
+@media (max-width: 590px){
+  .span{
+    margin-left: 70px;
+  }
+  .div{
+    column-gap: 20px;
+  }
+}

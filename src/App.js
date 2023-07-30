@@ -8,10 +8,11 @@ function App() {
 
   function buscar(){
     if (input === ''){
-      alert(`Digite algum cep`)
-      return false;
+      alert(`Digite algum CEP...`)
+      return;
     } 
-  
+    
+    
     fetch(`https://viacep.com.br/ws/${input}/json/`)
     .then((response) => response.json())
     .then((data) =>{
@@ -24,9 +25,7 @@ function App() {
 
       }
     )
-
-    
-  }
+}
 
   return (
     <body className='container'>
